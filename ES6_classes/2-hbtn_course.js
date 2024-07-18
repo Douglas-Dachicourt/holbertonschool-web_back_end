@@ -31,7 +31,7 @@ export default class HolbertonCourse {
 
   set students(newStudents) {
     if (typeof newStudents === "string") {
-        this._studens = newStudents;
+        this._students = newStudents;
     }
   }
 }
