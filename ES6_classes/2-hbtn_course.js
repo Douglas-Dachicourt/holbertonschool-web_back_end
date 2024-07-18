@@ -10,11 +10,11 @@ export default class HolbertonCourse {
   }
 
   get length() {
-    return this_length;
+    return this._length;
   }
 
   get students() {
-    return this_students;
+    return this._students;
   }
 
   set name(newName) {
