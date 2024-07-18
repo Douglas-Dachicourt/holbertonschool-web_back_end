@@ -1,5 +1,9 @@
 export default class Building {
   constructor(sqft) {
+    if (new.target === Building) {
+      throw new Error('ffffff');
+    }
+
     this._sqft = sqft;
 
     if (this.evacuationWarningMessage === undefined) {
