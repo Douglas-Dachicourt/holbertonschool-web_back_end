@@ -13,6 +13,9 @@ export class HolbertonClass {
   }
 }
 
+const class2019 = new HolbertonClass(2019, 'San Francisco');
+const class2020 = new HolbertonClass(2020, 'San Francisco');
+
 export class StudentHolberton extends HolbertonClass {
   constructor(firstName, lastName, year, location) {
     super(year, location);
@@ -24,21 +27,10 @@ export class StudentHolberton extends HolbertonClass {
     return `${this._firstName} ${this._lastName}`;
   }
 
-  get year() {
-    return this._year;
-  }
-
-  get location() {
-    return this._location;
-  }
-
   get fullStudentDescription() {
     return `${this._firstName} ${this._lastName} - ${this._year} - ${this._location}`;
   }
 }
-
-const class2019 = new HolbertonClass(2019, 'San Francisco');
-const class2020 = new HolbertonClass(2020, 'San Francisco');
 
 const student1 = new StudentHolberton('Guillaume', 'Salva', class2020);
 const student2 = new StudentHolberton('John', 'Doe', class2020);
