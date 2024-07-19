@@ -13,6 +13,6 @@ export default class Car {
       clone[symbol] = this[symbol];
     }
 
-    return cloneObj;
+    return clone;
   }
 }
