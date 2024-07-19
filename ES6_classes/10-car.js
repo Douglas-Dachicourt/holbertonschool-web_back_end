@@ -6,11 +6,7 @@ export default class Car {
   }
 
   cloneCar() {
-    const clone = {
-      brand: this._brand,
-      motor: this._motor,
-      color: this._color,
-    };
+    const clone = new this.constructor(this._brand, this._motor, this._color);
 
     const cloneObj = Object.getOwnPropertySymbols(this);
     for (const symbol of cloneObj) {
