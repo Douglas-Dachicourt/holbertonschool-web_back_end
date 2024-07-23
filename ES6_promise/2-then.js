@@ -5,10 +5,10 @@ export default function handleResponseFromAPI(promise) {
     if (success) {
       resolve({
         status: 200,
-        body: 'Success',
+        body: 'success',
       });
     } else {
-      reject(new Error({ Error }));
+      reject(new Error(Error));
     }
   })
     .then(console.log('Got a response from the API'));
