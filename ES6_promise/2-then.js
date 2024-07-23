@@ -8,6 +8,7 @@ export default function handleResponseFromAPI(promise) {
       };
     })
     .catch(() => {
-      throw new Error();
+      console.log('Got a response from the API');
+      return new Error();
     });
 }
