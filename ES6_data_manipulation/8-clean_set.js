@@ -2,7 +2,7 @@ export default function cleanSet(set, startString) {
   const str = '';
   const array = Array.from(set);
 
-  if (!startString) {
+  if (!startString || typeof startString !== 'string') {
     return '';
   }
 
