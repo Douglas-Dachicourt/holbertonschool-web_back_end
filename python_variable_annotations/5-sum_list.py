@@ -6,12 +6,17 @@
 
 def sum_list(input_list: list[float]) -> float:
     """
-        Argument : a list of floats = [floats]
+        Argument : a list of floats = [floats] - type list and float
 
-        Returns: the sum of all the floats included in the list
+        Variables : sum = initialized to zero before entering in the loop
+                    num = element at each index of the list to be added
+                    to the sum
+
+        Returns: the sum of all the floats included in the list - type float
 
     """
     sum = 0
+
     for num in input_list:
         sum = float(sum) + num
     return float(sum)
