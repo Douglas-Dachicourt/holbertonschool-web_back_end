@@ -2,9 +2,13 @@
 """
     Function that return the sum of floats included in a list
 """
+from typing import List
+"""
+    typing import to get a list type annotation
+"""
 
 
-def sum_list(input_list: list[float]) -> float:
+def sum_list(input_list: List[float]) -> float:
     """
         Argument : a list of floats = [floats] - type list and float
 
