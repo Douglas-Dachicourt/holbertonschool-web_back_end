@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
-import math
+from math import floor
 """
+import floor attributes from math definition functions
+
 Function that return the floor of a float passed as argument.
 """
 
@@ -11,4 +13,4 @@ def floor(n: float) -> int:
 
         Returns: an int type number
     """
-    return math.floor(n)
+    return floor(n)
