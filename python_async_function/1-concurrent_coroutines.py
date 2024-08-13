@@ -25,5 +25,5 @@ async def wait_n(n: int, max_delay: int) -> float:
         delays = await wait_random(max_delay)
         array.append(delays)
 
-    array.sort()
-    return array
+    new_array = sorted(array)
+    return new_array
