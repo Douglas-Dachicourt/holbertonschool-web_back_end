@@ -2,11 +2,14 @@
 """
     Function that spawn wait_random n times with the specified max_delay
 """
+from typing import List
+"""
+    import List from typing module
+"""
 wait_random = __import__('0-basic_async_syntax').wait_random
 """
     import of wait_random function previously coded
 """
-from typing import List
 
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
@@ -18,7 +21,7 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
             wait_random
 
         Returns: a list of float number, respectively the delays
-        allowed by n times
+        allowed by n times - List[float] type
 
     """
     array = []
