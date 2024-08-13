@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-
+"""
+    Function that spawn task_wait_random n times with the specified max_delay
+"""
 from typing import List
 """
     import List from typing module
@@ -7,7 +9,7 @@ from typing import List
 """
 task_wait_random = __import__('3-tasks').task_wait_random
 """
-    import task_wait_random from task 3
+    import function task_wait_random from task 3
 """
 
 
