@@ -5,16 +5,17 @@
     that waits for a random delay between 0 and max_delay (included
     and float value) seconds and eventually returns it
 """
-import asyncio
 import random
+import asyncio
 """
-    imports of asyncio and random modules
+    import of random and asyncio modules
+
 """
 
 
 async def wait_random(max_delay: int = 10):
     """
-        Argument: max_delay , type int
+        Argument: max_delay , type int, default value equals to 10
 
         Returns: random delay (float value)
     """
