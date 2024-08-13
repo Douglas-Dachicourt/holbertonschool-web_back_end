@@ -6,9 +6,10 @@ wait_random = __import__('0-basic_async_syntax').wait_random
 """
     import of wait_random function previously coded
 """
+from typing import List
 
 
-async def wait_n(n: int, max_delay: int) -> float:
+async def wait_n(n: int, max_delay: int) -> List[float]:
     """
         Arguments:
             - n: type int, represent the number of delays
