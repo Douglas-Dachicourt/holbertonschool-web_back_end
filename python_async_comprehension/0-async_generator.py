@@ -14,7 +14,8 @@ import random
 
 async def async_generator() -> AsyncGenerator[float, None]:
     """
-        Coroutine that yields a random float between 0 and 10, ten times.
+        Coroutine async_generator that yields a random float between
+        0 and 10, ten times.
 
         Yields:
         float: A random float between 0 and 10.
