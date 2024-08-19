@@ -20,7 +20,9 @@ async def async_generator() -> AsyncGenerator[int, None]:
     """
         Function async_generator that takes no argument
 
-        Return: AsyncGenerator typing
+        Arguments: none
+
+        Returns: AsyncGenerator typing
 
     """
     for _ in range(0, 10):
