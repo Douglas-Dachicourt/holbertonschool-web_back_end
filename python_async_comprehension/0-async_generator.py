@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-    Mdule that display a coroutine called async_generator that takes no arguments.
+    Module that display a coroutine called async_generator that takes
+    no arguments.
 
     The coroutine will loop 10 times, each time asynchronously wait 1
     second, then yield a random number between 0 and 10
@@ -10,7 +11,7 @@ from typing import AsyncGenerator
 import asyncio
 import random
 """
-    import of Generator from typing
+    import of AsyncGenerator from typing
     import of asyncio to use async/await
     import random to generate a random number
 """
