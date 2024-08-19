@@ -6,7 +6,7 @@
 """
 from typing import List
 """
-    import List from typing and asyncio modules
+    import List from typing
 """
 
 async_generator = __import__('-0-async_generator').async_generator
@@ -23,6 +23,7 @@ async def async_comprehension() -> List[float]:
         Arguments: None
 
         Returns: a list of awaited numbers via async_generator()
+            typed List of float
 
 
     """
