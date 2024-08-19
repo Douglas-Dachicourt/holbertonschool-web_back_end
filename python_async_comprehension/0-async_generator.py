@@ -16,7 +16,7 @@ import random to generate a random number
 """
 
 
-async def async_generator() -> AsyncGenerator[int, None]:
+async def async_generator() -> AsyncGenerator[float, None]:
     """
         Coroutine that yields a random float between 0 and 10, ten times.
 
