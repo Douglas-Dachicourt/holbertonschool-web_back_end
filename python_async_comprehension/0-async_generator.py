@@ -18,11 +18,10 @@ import random to generate a random number
 
 async def async_generator() -> AsyncGenerator[int, None]:
     """
-        Function async_generator that takes no argument
+        Coroutine that yields a random float between 0 and 10, ten times.
 
-        Arguments: none
-
-        Returns: AsyncGenerator typing
+        Yields:
+        float: A random float between 0 and 10.
 
     """
     for _ in range(0, 10):
