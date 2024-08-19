@@ -6,7 +6,7 @@ The coroutine will loop 10 times, each time asynchronously wait 1
 second, then yield a random number between 0 and 10
 
 """
-from typing import Generator
+from typing import AsyncGenerator
 import asyncio
 import random
 """
@@ -16,11 +16,11 @@ import random to generate a random number
 """
 
 
-async def async_generator() -> Generator[int, None, None]:
+async def async_generator() -> AsyncGenerator[int, None]:
     """
         Function async_generator that takes no argument
 
-        Return: Generator typing
+        Return: AsyncGenerator typing
 
     """
     for _ in range(0, 10):
