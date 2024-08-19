@@ -10,11 +10,6 @@
 from typing import AsyncGenerator
 import asyncio
 import random
-"""
-    import of AsyncGenerator from typing
-    import of asyncio to use async/await
-    import random to generate a random number
-"""
 
 
 async def async_generator() -> AsyncGenerator[float, None]:
