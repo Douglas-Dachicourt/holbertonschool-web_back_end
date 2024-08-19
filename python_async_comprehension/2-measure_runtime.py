@@ -20,6 +20,8 @@ async def measure_runtime() -> float:
     Coroutine that measures the time taken to run async_comprehension
     four times concurrently.
 
+    Arguments: None
+
     Returns:
         float: The total runtime in seconds.
     """
