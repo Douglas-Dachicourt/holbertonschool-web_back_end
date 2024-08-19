@@ -22,8 +22,7 @@ async def measure_runtime() -> float:
 
     Arguments: None
 
-    Returns:
-        float: The total runtime in seconds.
+    Returns: total_time, type float: The total runtime in seconds.
     """
     start_time = time.perf_counter()
 
