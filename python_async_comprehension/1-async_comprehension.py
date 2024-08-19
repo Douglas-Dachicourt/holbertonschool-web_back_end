@@ -4,7 +4,6 @@
     comprehensing over async_generator, then return the 10 random numbers.
 
 """
-import asyncio
 from typing import List
 """
     import List from typing and asyncio modules
