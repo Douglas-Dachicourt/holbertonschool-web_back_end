@@ -3,7 +3,7 @@
     Module that measures the runtime of executing async_comprehension
     four times concurrently.
 """
-from asyncio import gather
+import asyncio
 import time
 """
     import of asyncio and time modules
@@ -26,7 +26,7 @@ async def measure_runtime() -> float:
     """
     start_time = time.perf_counter()
 
-    await gather(
+    await asyncio.gather(
         async_comprehension(),
         async_comprehension(),
         async_comprehension(),
