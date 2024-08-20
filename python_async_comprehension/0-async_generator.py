@@ -6,9 +6,10 @@
     second, then yield a random number between 0 and 10
 
 """
-from typing import AsyncGenerator
 import asyncio
 import random
+from typing import AsyncGenerator
+
 """
     import of AsyncGenerator, asyncio and random modules
 
