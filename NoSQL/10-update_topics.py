@@ -15,7 +15,8 @@ def update_topics(mongo_collection, name, topics):
             - topics: topics (list of strings) will be the list of topics
             approached in the school
 
-        Returns: the topic updated with the name passed
     """
 
-    mongo_collection.update_one({"name": name}, {"$set": {"topics": topics}})
+    result = mongo_collection.update_one(
+        {"name": name}, {"$set": {"topics": topics}})
+    return result.modified_count
