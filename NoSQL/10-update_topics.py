@@ -3,10 +3,6 @@
     Module with a function that changes all topics of a school document
     based on the name
 """
-from pymongo import UpdateOne
-"""
-    import UpdateOne from pymongo
-"""
 
 
 def update_topics(mongo_collection, name, topics):
@@ -21,9 +17,5 @@ def update_topics(mongo_collection, name, topics):
 
         Returns: the topic updated with the name passed
     """
-    doc = [
-        UpdateOne({"name": name}, {"$set": {"topics": topics}})
-    ]
 
-    result = mongo_collection.bulk_write(doc)
-    return result.bulk_api_result
+    mongo_collection.update_one({"name": name}, {"$set": {"topics": topics}})
