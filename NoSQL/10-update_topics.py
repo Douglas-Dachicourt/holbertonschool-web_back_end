@@ -4,6 +4,9 @@
     based on the name
 """
 from pymongo import UpdateOne
+"""
+    import UpdateOne from pymongo
+"""
 
 
 def update_topics(mongo_collection, name, topics):
