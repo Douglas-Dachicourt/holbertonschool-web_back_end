@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
 """
+    This module gives a script that provides some stats about Nginx logs
+    stored in MongoDB
 
 """
 from pymongo import MongoClient
+"""
+    import pymongo
 
+"""
 
 if __name__ == "__main__":
 
@@ -16,11 +21,12 @@ if __name__ == "__main__":
 
     methods = ["GET", "POST", "PUT", "PATCH", "DELETE"]
     print("Methods:")
+
     for method in methods:
         count_methods = collection.count_documents({"method": method})
-        print("    method {}: {}".format(method, count_methods))
+        print(f"\tmethod {method}: {count_methods}")
 
     status_check_count = collection.count_documents({"method":
                                                      "GET", "path":
                                                      "/status"})
-    print("{} status check".format(status_check_count))
+    print(f"{status_check_count} status check")
