@@ -5,7 +5,7 @@ process.stdin.on('readable', () => {
   const input = process.stdin.read();
   const yourNameIs = 'Your name is: ';
   if (input !== null) {
-    process.stdout.write(yourNameIs + input);
+    process.stdout.write(`${yourNameIs + input.trim()}\n`);
   }
 });
 
