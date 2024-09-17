@@ -1,11 +1,8 @@
-const express = require('express');
+const http = require('http');
 
-const app = express();
-
-app.all('*', () => {
-  console.log('Hello Holberton School!');
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { 'content-type': 'text/plain' });
+  res.end('Hello Holberton School!');
 });
 
-app.listen(1245);
-
-module.exports = app;
+server.listen(1245);
