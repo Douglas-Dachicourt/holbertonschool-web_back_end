@@ -33,15 +33,15 @@ function countStudents(path) {
         }
       }
 
-      console.log(`Number of students: ${students.length}`);
+      let output = `Number of students: ${students.length}\n`;
 
       for (const field in fields) {
         if (fields[field].length > 0) {
           const formattedList = fields[field].join(', ');
-          console.log(`Number of students in ${field}: ${fields[field].length}. List: ${formattedList}`);
+          output += `Number of students in ${field}: ${fields[field].length}. List: ${formattedList}\n`;
         }
       }
-      resolve();
+      resolve(output.trim());
     });
   }));
 }
